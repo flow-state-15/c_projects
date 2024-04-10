@@ -134,6 +134,7 @@ int main(void)
     xs->fill(xs, (char[]){'h', 'e', 'l', 'l', 'o'}, 5);
     xs->print(xs);
 
+    free(xs->array);
     free(xs);
     return 0;
 }
