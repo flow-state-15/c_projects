@@ -129,12 +129,21 @@ Array *new_array(ValueType type, size_t size)
 
 int main(void)
 {
-    Array *xs = new_array(CHAR, 5);
-    xs->print(xs);
-    xs->fill(xs, (char[]){'h', 'e', 'l', 'l', 'o'}, 5);
-    xs->print(xs);
+    // Array *xs = new_array(CHAR, 5);
+    // xs->print(xs);
+    // xs->fill(xs, (char[]){'h', 'e', 'l', 'l', 'o'}, 5);
+    // xs->print(xs);
 
-    free(xs->array);
-    free(xs);
+    // free(xs->array);
+    // free(xs);
+    // char c;
+    // printf("press key for code: \n");
+    // scanf("%s", &c);
+    // printf("key input -> %s\n", c);
+    char  number;
+
+		printf("Type in a number \n");
+		scanf("%d", &number);
+		printf("The number you typed was %d\n", number);
     return 0;
 }
